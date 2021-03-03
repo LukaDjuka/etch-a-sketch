@@ -1,0 +1,17 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    gap: 1px;
+    height: 100vh;
+}
+
+.uniform-grid-item {
+    /* background-color: rgb(123, 123, 170); */
+    background-color: moccasin;
+
+}
+
+.uniform-grid-item:hover{
+    background-color: chocolate;
+}
