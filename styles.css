@@ -57,9 +57,5 @@ header {
 
 .uniform-grid-item {
     background-color: white;
-
-}
-
-.uniform-grid-item:hover{
-    background-color: black;
+    /* background-color: rgba(0,0,0,0); */
 }
