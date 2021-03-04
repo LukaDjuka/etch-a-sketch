@@ -12,7 +12,7 @@ function createGrid(columns, rows){
         let gridBox = document.createElement("div");
         gridBox.classList.add("uniform-grid-item");
         gridBox.addEventListener('mouseover', function () {
-        this.style.backgroundColor = "chocolate";
+        this.style.backgroundColor = "black";
         });
         gridContainer.appendChild(gridBox);
     }
@@ -29,6 +29,6 @@ function resetGrid(){
     let numCols = prompt("Please enter an integer for the amount of Columns");
     let numRows = prompt("Please enter an integer for the amount of Rows");
     gridContainer.style.gridTemplateColumns = `repeat(${numCols}, 1fr)`;
-    gridContainer.style.gridTemplateColumns = `repeat(${numRows}, 1fr)`;
+    gridContainer.style.gridTemplateRows = `repeat(${numRows}, 1fr)`;
     createGrid(numCols, numRows);
 }

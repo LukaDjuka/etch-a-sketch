@@ -5,10 +5,31 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <button id="reset">Reset</button>
-        <div id="container"></div>
+        <header>
+            <h1>ETCH-A-SKETCH</h1>
+        </header>
+        <div id="option-div-scaffolding">
+            <div id="option-container">
+                <span>
+                    <label for="regular-draw">Regular</label>
+                    <input type="radio" id="regular-draw" name="draw-type" value="regular-draw" checked/>
+                </span>
 
+                <span>
+                    <label for="shading-draw">Shading</label>
+                    <input type="radio" id="shading-draw" name="draw-type" value="shading-draw" />
+                </span>
 
+                <span>
+                    <label for="rainbow-draw">Rainbow</label>
+                    <input type="radio" id="rainbow-draw" name="draw-type" value="rainbow-draw" />
+                </span>
+            </div>
+            <button id="reset">Reset</button>
+        </div>
+        <div id="center-drawboard">
+            <div id="container"></div>
+        </div>
         <script src="scripts.js"></script>
     </body>
 </html>
